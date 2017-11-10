@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="dialogEnableGps_message">Location Permission Needed</string>
+    <string name="dialogEnableGps_buttonOk">Ok</string>
+    <string name="dialogEnableGps_buttonCancel">Cancel</string>
+    <string name="registerCancelCod_title">Weather</string>
+</resources>

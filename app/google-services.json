@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "636717591370",
+    "firebase_url": "https://ceremonial-port-123107.firebaseio.com",
+    "project_id": "ceremonial-port-123107"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636717591370:android:3de09d10207fbb90",
+        "android_client_info": {
+          "package_name": "com.example.cozma.weatherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636717591370-kq25e88rova2tb3868miu7jq6it731if.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT97r48J3ksij-8tBBh7g-V0VqtKHhUJI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

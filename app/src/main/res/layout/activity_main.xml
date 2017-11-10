@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cozma.weatherapp.MainActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/tab_bar_color">
+
+
+            <com.example.cozma.weatherapp.customView.TextViewOpenSans
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/registerCancelCod_title"
+                android:textColor="@color/full_white"
+                android:textSize="17sp" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mainActivity_autoCompleteView_city"
+            android:layout_marginBottom="40dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <include
+                    android:id="@+id/weather_myLocation"
+                    layout="@layout/layout_city_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mainActivity_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/mainActivity_addCity"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="Add city"
+            android:textColor="@color/full_white" />
+
+        <AutoCompleteTextView
+            android:id="@+id/mainActivity_autoCompleteView_city"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/tab_bar_color"
+            android:clickable="true"
+            android:gravity="center"
+            android:hint="Search city"
+            android:textColor="@color/full_white"
+            android:textColorLink="@color/full_white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
